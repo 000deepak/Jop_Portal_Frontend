@@ -1,0 +1,37 @@
+.customer-details {
+  height: 100vh;
+  width: 100vw;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+  .type {
+    display: flex;
+    flex-direction: column;
+
+    .checkBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+    .customer-form {
+      width: 35vw;
+      margin: 5vh 0vw 5vh 0vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 0.6rem;
+      border: 0.01rem solid #dadce0;
+    }
+    .customer-form {
+      padding: 2rem;
+      margin-right: 20vw;
+    }
+    .name {
+      display: flex;
+      justify-content: space-between;
+    }
+}

@@ -1,0 +1,87 @@
+@mixin job-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border {
+  border-radius: 0.6rem;
+  border: 0.01rem solid #dadce0;
+}
+
+.main-job {
+  @include job-flex-center();
+  min-height: 95vh;
+
+  .job-area {
+    width: 75vw;
+    min-height: 100vh;
+    margin: 5vh 0vw 0vh 0vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    .job-border {
+      @include border();
+      margin: 5vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .job-main {
+      width: 75vw;
+    }
+  }
+}
+
+.job-items {
+  height: 25vh;
+  width: 75vw;
+  margin-bottom: 2.5vh;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .company-logo {
+    padding: 2rem;
+  }
+  .details {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0vh 0vw 10vh 5vh;
+  }
+}
+
+.fill,
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  height: 8vh;
+  margin: 5vh 0vw 5vh 0vw;
+  padding-left: 2vw;
+  @include border();
+}
+
+.get-candidate{
+  width: 15vw;
+}
+
+.post-jobs{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  // align-items: center;
+
+  .postjobsButton{
+    width: 70vw;
+    margin: 0vh 0vw 0vh 2vw;
+
+  }
+}
